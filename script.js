@@ -16,8 +16,11 @@ const setCurrentSections = (currentSections) => {
 };
 
 const updateNavigation = () => {
-  const bandTop = Math.max(72, window.innerHeight * 0.18);
-  const bandBottom = Math.min(window.innerHeight * 0.58, bandTop + 260);
+  // Use a narrow reading line so the active item changes where the eye is
+  // actually reading, instead of switching early because a large card is
+  // merely visible somewhere in the viewport.
+  const bandTop = Math.max(88, Math.min(window.innerHeight * 0.32, 220));
+  const bandBottom = bandTop + 14;
   const visibleSections = sections.filter((section) => {
     const { top, bottom } = section.getBoundingClientRect();
     return top < bandBottom && bottom > bandTop;
