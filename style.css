@@ -235,10 +235,11 @@ img { display: block; max-width: 100%; }
 #research .research-list li {
   border-color: rgba(29, 29, 31, 0.045);
   background: rgba(246, 247, 249, 0.82);
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 400;
 }
 #research .research-list li::before { background: #8e8e93; }
-#research .research-list strong { color: var(--ink); font-weight: 700; }
-#research .research-list em { color: #3a3a3c; font-weight: 560; }
 
 .paper-list { display: grid; gap: 18px; }
 .paper-box {
