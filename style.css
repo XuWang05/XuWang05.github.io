@@ -277,22 +277,39 @@ img { display: block; max-width: 100%; }
 .paper-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px 13px;
-  align-items: baseline;
+  gap: 7px;
+  align-items: center;
   color: var(--faint);
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0.01em;
 }
 .paper-line .venue {
+  border: 1px solid rgba(197, 99, 22, 0.14);
   border-radius: 999px;
   background: rgba(197, 99, 22, 0.095);
   color: var(--venue);
   padding: 3px 8px;
   font-weight: 750;
 }
-.paper-line time { color: var(--faint); font-weight: 650; font-variant-numeric: tabular-nums; }
-.paper-line > span:not(.venue) { font-style: italic; }
+.paper-line time {
+  border: 1px solid rgba(0, 102, 204, 0.12);
+  border-radius: 999px;
+  background: rgba(0, 113, 227, 0.085);
+  color: #0066cc;
+  padding: 3px 8px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.paper-line > span:not(.venue) {
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  border-radius: 999px;
+  background: rgba(118, 118, 128, 0.075);
+  color: #48484a;
+  padding: 3px 8px;
+  font-style: normal;
+  font-weight: 680;
+}
 .paper-info h2 {
   margin: 10px 0 7px;
   font-size: 19px;
