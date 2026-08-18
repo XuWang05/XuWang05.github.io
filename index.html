@@ -1,88 +1,233 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xu Wang</title>
-  <meta name="description" content="Xu Wang | Undergraduate Student at Shandong University" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f3">
+  <meta name="description" content="Xu Wang is an undergraduate researcher at Shandong University working on multimodal graph learning, graph foundation models, and robust graph learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Xu Wang — Research Homepage">
+  <meta property="og:description" content="Multimodal graph learning, graph foundation models, and robust generalization.">
+  <meta property="og:url" content="https://xuwang05.github.io/">
+  <meta property="og:image" content="https://xuwang05.github.io/assets/images/xu-wang-hero.jpg">
+  <link rel="canonical" href="https://xuwang05.github.io/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <title>Xu Wang — Research Homepage</title>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <div class="brand">Xu Wang</div>
-      <nav class="menu">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="wordmark" href="#top" aria-label="Xu Wang, home">Xu Wang</a>
+      <nav class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#news">News</a>
         <a href="#publications">Publications</a>
+        <a href="#news">News</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.75"></circle><path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M5.3 5.3 3.9 3.9M20.1 20.1l-1.4-1.4M18.7 5.3l1.4-1.4M3.9 20.1l1.4-1.4"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"></path></svg>
+      </button>
     </div>
   </header>
 
-  <main class="container layout">
-    <aside class="sidebar">
-      <img src="assets/profile.jpg" alt="Xu Wang" class="avatar" />
-      <h1>Xu Wang</h1>
-      <p class="meta">Undergraduate Student (2023–2027)</p>
-      <p class="meta">Shandong University</p>
-
-      <div class="links">
-        <a href="mailto:xuwang2023@mail.sdu.edu.cn">Email</a>
-        <a href="https://github.com/Caesarr-r" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Undergraduate Researcher · Shandong University</p>
+        <h1 id="hero-title">Learning what graphs mean—across structure, text, and modalities.</h1>
+        <p class="hero-intro">I am <strong>Xu Wang</strong>, a computer science undergraduate studying how topology can guide representation learning and generalization in multimodal and text-attributed graphs.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#publications">View research</a>
+          <a class="text-link" href="mailto:xuwang2023@mail.sdu.edu.cn">Email me <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-    </aside>
+      <figure class="hero-portrait reveal" data-delay="1">
+        <img src="assets/images/xu-wang-hero.jpg" alt="Xu Wang looking out over the sea" width="1200" height="1600" fetchpriority="high">
+      </figure>
+    </section>
 
-    <section class="content">
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I am an undergraduate student at <strong>Shandong University</strong> (2023–2027), working on graph learning.
-          My current research mainly focuses on <strong>text-attributed graphs (TAG)</strong>.
-        </p>
-        <p>
-          Within this main line, <strong>out-of-distribution (OOD) detection</strong> is a relatively small sub-direction,
-          which led to our recent KBS-accepted paper.
-        </p>
-        <p>
-          My future research will focus more on <strong>multimodal attributed graphs (MAG)</strong>.
-        </p>
-      </section>
-
-      <section id="research">
-        <h2>Research</h2>
-        <ul>
-          <li><strong>Main track (Current):</strong> Text-Attributed Graphs (TAG)</li>
-          <li><strong>Sub-direction:</strong> OOD detection for TAG</li>
-          <li><strong>Future direction:</strong> Multimodal Attributed Graphs (MAG)</li>
-        </ul>
-      </section>
-
-      <section id="news">
-        <h2>News 🥳</h2>
-        <div class="box news-box">
-          <p><strong>📅 Mar 02, 2026</strong> — One paper was accepted by <strong>Knowledge-Based Systems (KBS)</strong> </p>
+    <section class="section shell" id="about" aria-labelledby="about-title">
+      <div class="section-kicker reveal">01 / About</div>
+      <div class="about-grid">
+        <h2 class="section-title reveal" id="about-title">A structure-first view of multimodal intelligence.</h2>
+        <div class="about-copy reveal" data-delay="1">
+          <p>My work sits at the intersection of graph machine learning and multimodal representation learning. I am particularly interested in models that use graph structure as a reliable signal for aligning text, images, and other modalities—without erasing the information unique to each modality.</p>
+          <p>I began with out-of-distribution detection on text-attributed graphs and am now moving toward multimodal graph learning and graph foundation models, with an emphasis on robustness under modality and topology shifts.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="publications">
-        <h2>Publication 🚀</h2>
-        <div class="box pub-box">
-          <p class="paper-title">
-            Towards Effective Few-Shot OOD Detection for Text-Attributed Graphs via Topology-Text Consensus Modeling
-          </p>
-          <p><strong>Xu Wang</strong>, Yinlin Zhu, Xunkai Li, Meixia Qu, Wenyu Wang</p>
-          <p><em>Knowledge-Based Systems (KBS)</em>, 2026. (Accepted on March 02, 2026) ✅</p>
+    <section class="section section-soft" id="research" aria-labelledby="research-title">
+      <div class="shell">
+        <div class="section-kicker reveal">02 / Research</div>
+        <div class="section-heading-row reveal">
+          <h2 class="section-title" id="research-title">Research focus</h2>
+          <p>From reliable alignment to transferable graph representations.</p>
         </div>
-      </section>
+        <div class="focus-list">
+          <article class="focus-item reveal">
+            <span class="focus-index">01</span>
+            <h3>Multimodal Graph Learning</h3>
+            <p>Structure-aware alignment and fusion across text, images, and graph topology.</p>
+          </article>
+          <article class="focus-item reveal" data-delay="1">
+            <span class="focus-index">02</span>
+            <h3>Graph Foundation Models</h3>
+            <p>Transferable graph encoders that retain both shared and modality-specific evidence.</p>
+          </article>
+          <article class="focus-item reveal" data-delay="2">
+            <span class="focus-index">03</span>
+            <h3>Robust Graph Learning</h3>
+            <p>Reliable learning under distribution, modality, and topology shifts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:xuwang2023@mail.sdu.edu.cn">xuwang2023@mail.sdu.edu.cn</a></p>
-        <p>GitHub: <a href="https://github.com/Caesarr-r" target="_blank" rel="noopener noreferrer">github.com/Caesarr-r</a></p>
-      </section>
+    <section class="section shell publications" id="publications" aria-labelledby="publications-title">
+      <div class="section-kicker reveal">03 / Publications</div>
+      <div class="section-heading-row reveal">
+        <h2 class="section-title" id="publications-title">Selected publications</h2>
+        <p>Framework, idea, and publication details—together.</p>
+      </div>
+
+      <div class="paper-list">
+        <article class="paper-card reveal">
+          <a class="paper-visual" href="https://doi.org/10.1016/j.knosys.2026.115686" target="_blank" rel="noreferrer" aria-label="Open TTCM paper">
+            <img src="assets/images/ttcm-framework.png" alt="Overview of the TTCM framework" width="2116" height="1167" loading="lazy">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta">
+              <span>Knowledge-Based Systems</span>
+              <span>CAS Tier 1 (TOP) · JCR Q1</span>
+              <span>First author</span>
+            </div>
+            <h3>Towards Effective Few-Shot OOD Detection for Text-Attributed Graphs via Topology-Text Consensus Modeling</h3>
+            <p class="authors"><strong>Xu Wang</strong>, Yinlin Zhu, Xunkai Li, Meixia Qu, Wenyu Wang</p>
+            <p class="paper-summary">TTCM combines graph-text alignment, structure-semantic dual augmentation, and consensus-gated EM training to build a robust decision boundary from only a few labeled OOD samples.</p>
+            <p class="paper-role"><span>Role</span> Led the problem formulation, method development, experiments, and manuscript preparation.</p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1016/j.knosys.2026.115686" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/XuWang05/TTCM" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card reveal">
+          <a class="paper-visual" href="https://doi.org/10.1145/3770855.3817900" target="_blank" rel="noreferrer" aria-label="Open LG-PLUG paper">
+            <img src="assets/images/lgplug-framework.png" alt="Overview of the LG-PLUG framework" width="1290" height="480" loading="lazy">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta">
+              <span>ACM KDD 2026</span>
+              <span>CCF-A</span>
+              <span>Third author</span>
+            </div>
+            <h3>Both Topology and Text Matter: Revisiting LLM-guided Out-of-Distribution Detection on Text-attributed Graphs</h3>
+            <p class="authors">Yinlin Zhu, Di Wu, <strong>Xu Wang</strong>, Guocong Quan, Miao Hu</p>
+            <p class="paper-summary">LG-PLUG aligns topology and text at both node and edge levels, then uses consensus-driven LLM guidance to obtain informative OOD exposure as a plug-and-play regularizer.</p>
+            <p class="paper-role"><span>Role</span> Implemented the complete codebase and contributed to the topology-text representation alignment design.</p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1145/3770855.3817900" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card reveal">
+          <a class="paper-visual" href="https://arxiv.org/abs/2606.14172" target="_blank" rel="noreferrer" aria-label="Open CoMAG preprint">
+            <img src="assets/images/comag-framework.png" alt="Overview of the CoMAG framework" width="2036" height="1096" loading="lazy">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta">
+              <span>IEEE ICDM 2026</span>
+              <span>CCF-B · Accepted</span>
+              <span>Second author</span>
+            </div>
+            <h3>CoMAG: Context-aware Modality-Topology Co-Alignment for Multimodal Attributed Graphs</h3>
+            <p class="authors">Sirui Zhang, <strong>Xu Wang</strong>, Zhengyu Wu, Xunkai Li, Hongchao Qin</p>
+            <p class="paper-summary">CoMAG learns reliable task-aware context, follows modality-specific hop trajectories, and aligns cross-modal evidence while preserving the private clues carried by each modality.</p>
+            <p class="paper-role"><span>Role</span> Contributed to core module design and led the concept and illustration of the method framework.</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2606.14172" target="_blank" rel="noreferrer">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://arxiv.org/pdf/2606.14172" target="_blank" rel="noreferrer">PDF <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card reveal">
+          <a class="paper-visual" href="https://arxiv.org/abs/2606.12867" target="_blank" rel="noreferrer" aria-label="Open SMGFM preprint">
+            <img src="assets/images/smgfm-framework.png" alt="Overview of the SMGFM framework" width="1270" height="700" loading="lazy">
+          </a>
+          <div class="paper-content">
+            <div class="paper-meta">
+              <span>IEEE ICDM 2026</span>
+              <span>CCF-B · Accepted</span>
+              <span>Second author</span>
+            </div>
+            <h3>SMGFM: Spectral Multimodal Graph Pretraining for Multimodal-Attributed Graphs</h3>
+            <p class="authors">Zhengyu Wu, <strong>Xu Wang</strong>, Hongchao Qin, Xunkai Li, Guang Zeng, Rong-Hua Li, Guoren Wang</p>
+            <p class="paper-summary">SMGFM uses a spectral graph-frequency view to separate smooth consensus from high-frequency private evidence and pretrain a transferable multimodal graph encoder.</p>
+            <p class="paper-role"><span>Role</span> Contributed to core module design and led the concept and illustration of the method framework.</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2606.12867" target="_blank" rel="noreferrer">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://arxiv.org/pdf/2606.12867" target="_blank" rel="noreferrer">PDF <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="news" aria-labelledby="news-title">
+      <div class="shell">
+        <div class="section-kicker reveal">04 / News</div>
+        <div class="news-grid">
+          <h2 class="section-title reveal" id="news-title">Recent updates</h2>
+          <ol class="timeline">
+            <li class="reveal">
+              <time datetime="2026-08">Aug 2026</time>
+              <p>Two papers were accepted by <strong>IEEE ICDM 2026</strong>.</p>
+            </li>
+            <li class="reveal" data-delay="1">
+              <time datetime="2026-08">Aug 2026</time>
+              <p>Our work on LLM-guided OOD detection appeared at <strong>ACM KDD 2026</strong>.</p>
+            </li>
+            <li class="reveal" data-delay="2">
+              <time datetime="2026-03">Mar 2026</time>
+              <p>Our first-author work TTCM was accepted by <strong>Knowledge-Based Systems</strong>.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact shell" id="contact" aria-labelledby="contact-title">
+      <div class="section-kicker reveal">05 / Contact</div>
+      <div class="contact-panel reveal">
+        <div>
+          <p class="contact-overline">Research conversations are welcome.</p>
+          <h2 id="contact-title">Let’s think about graphs from more than one view.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:xuwang2023@mail.sdu.edu.cn">xuwang2023@mail.sdu.edu.cn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/XuWang05" target="_blank" rel="noreferrer">GitHub / XuWang05 <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span data-year>2026</span> Xu Wang</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
