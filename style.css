@@ -372,6 +372,7 @@ img { display: block; max-width: 100%; }
   .research-list { grid-template-columns: 1fr; }
   .paper-box { grid-template-columns: 1fr; gap: 16px; padding: 11px; }
   .paper-thumb { min-height: 198px; padding: 9px; }
+  .paper-thumb img { width: 100%; height: auto; max-height: none; object-fit: contain; }
   .paper-info { padding: 0 4px 7px; }
   .paper-info h2 { font-size: 18px; }
   .news-list li { grid-template-columns: 65px 1fr; gap: 12px; }
